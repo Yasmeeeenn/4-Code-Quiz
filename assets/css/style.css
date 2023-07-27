@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    height: 100vh;
+}
+
+
+
+.top-info p{
+  float: right;
+}
+
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    
+
+}
+
+
+
+.get-started{
+    margin-bottom: 20vh;
+}

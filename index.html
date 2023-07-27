@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Code Quiz Challenge!</h1>
+    </header>
+
+    <div class="container">
+        <div class="top-info">
+            <p id = "timer">Time: </p>
+            <button>View Highscores</button>
+            <p id = "score">Your Score is: </p>
+        </div>
+
+        <div class="quiz" id="options">
+            <div id="start" style="display: block;">
+            <header class="get-started">
+                <h2>Please click start to begin!</h2>
+            </header>
+            <button id="start" onclick="setTime()">START</button>
+            </div>
+            <form>
+                <div class="question" id="q1" style="display: none;">
+                    <p>Commonly used data types DO NOT include: </p>
+                    <label>
+                        <input type="radio" name="q1" value="strings"> Strings 
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value="booleans"> Booleans 
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value="alerts"> Alerts 
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value="numbers"> Numbers 
+                    </label>
+                    <br>
+                    <br>
+                    <p id="corrIncrr"></p>
+                    <button type="button" onclick="checkAnswer()">Next</button>
+                </div>
+                
+                <div class="question" id="q2" style="display: none;">
+                        <p>The condition in an if / else statement is enclosed within ____. </p>
+                    <label>
+                        <input type="radio" name="q2" value="quotes"> Quotes 
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q2" value="curlyBrackets"> Curly brackets 
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q2" value="parentheses"> Parentheses 
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q2" value="squareBrackets"> Square brackets 
+                    </label>
+                    <br>
+                    <br>
+                    <p id="corrIncrr"></p>
+                    <button type="button" onclick="checkAnswer()">Next</button>
+                </div>
+
+                <div class="question" id="q3" style="display: none;">
+                        <p>Arrays in JavaScript can be used to store ____. </p>
+                    <label>
+                        <input type="radio" name="q3" value="numbersAndStrings"> Numbers and strings
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="otherArrays"> Other arrays 
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="booleans"> Booleans
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="allAbove"> All of the above
+                    </label>
+                    <br>
+                    <br>
+                    <p id="corrIncrr"></p>
+                    <button type="button" onclick="checkAnswer()">Next</button>
+                </div>
+
+                <div class="question" id="q4" style="display: none;">
+                        <p>String values must be enclosed within ____ when being assigned to variables. </p>
+                    <label>
+                        <input type="radio" name="q4" value="commas"> Commas
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q4" value="curlyBrackets"> Curly Brackets 
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q4" value="quotes"> Quotes
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q4" value="parentheses"> Parentheses
+                    </label>
+                    <br>
+                    <br>
+                    <p id="corrIncrr"></p>
+                    <button type="button" onclick="checkAnswer()">Next</button>
+                </div>
+
+                <div class="question" id="q5" style="display: none;">
+                        <p>A very useful tool used during development and debugging for printing content to the debugger is: </p>
+                    <label>
+                        <input type="radio" name="q5" value="javascript"> JavaScript
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q5" value="terminalBash"> Terminal / Bash
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q5" value="forLoops"> For loops
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q5" value="consoleLog"> Console log 
+                    </label>
+                    <br>
+                    <br>
+                    <p id="corrIncrr"></p>
+                    <button type="button" onclick="checkAnswer()">Next</button>
+                </div>
+            </form>
+            <div id="quizComplete" style="display: none;">
+                <p>Quiz Completed</p>
+                <p id = "score">Your Score is: </p>
+
+            </div>
+
+        
+        
+            
+        </div>
+        
+    </div>
+
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
+//
